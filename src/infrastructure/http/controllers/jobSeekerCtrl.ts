@@ -8,7 +8,7 @@ const viewAllJobPostUseCase = new ViewAllJobPost(jobSeekerRepo);
 export class JobSeekerController {
     constructor() {}
 
-    async createJobPost(req: Request, res: Response): Promise<any> {
+    async applyjob(req: Request, res: Response): Promise<any> {
         try {
       
             const result = await viewAllJobPostUseCase.execute(req.body);

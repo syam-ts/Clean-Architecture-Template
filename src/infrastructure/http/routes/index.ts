@@ -2,19 +2,18 @@ import { Router } from "express";
 import { EmployerController } from "../controllers/employerCtrl";
 import { JobSeekerController } from "../controllers/jobSeekerCtrl";
 
+const router = Router();
 const employerController = new EmployerController();
 const jobSeekerController = new JobSeekerController();
 
-
-
-const router = Router();
-// const { createJobPost } = EmployerController;
+const { viewAllJobPost, createJobPost } = employerController;
+const { applyjob } = jobSeekerController;
 
 // Employer
-router.get("/viewAllJobPost", employerController.viewAllJobPost);
-router.post("/createjob", employerController.createJobPost);
+router.get("/viewAllJobPost", viewAllJobPost);
+router.post("/createjob", createJobPost);
 
 // Jobseeker
-router.post('/applyJob', jobSeekerController.createJobPost)
+router.post('/applyJob', applyjob);
 
 export default router;
