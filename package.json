@@ -1,0 +1,8 @@
+{
+  "name": "Clean-Architecture-Template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/syam-ts/Clean-Architecture-Template.git",
+  "author": "<syamnandhu3@gmail.com>",
+  "license": "MIT"
+}
