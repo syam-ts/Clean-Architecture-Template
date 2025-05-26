@@ -16,7 +16,7 @@ export class EmployerController {
             const result = await createJobPostUseCase.execute(req.body);
             res.json({ success: true, result }).status(201);
         } catch (err: any) {
-            res.json({ success: false, message: err }).status(501);
+            res.json({ success: false, message: err.message }).status(501);
         }
     }
 
@@ -25,8 +25,7 @@ export class EmployerController {
             const result = await viewAllJobPostUseCase.execute();
             res.json({ success: true, result }).status(200);
         } catch (err: any) {
-            console.log('Theerro', err)
-            res.json({ success: false, message: err }).status(501);
+            res.json({ success: false, message: err.message }).status(501);
         }
     }
 }
