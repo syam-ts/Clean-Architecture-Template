@@ -11,6 +11,10 @@ export class Employer extends User {
         return "employer";
     };
 
+    viewAllJobPost = () => {
+    return
+    };
+
     createJobPost = (job: any) => {
         let newPost;
         return newPost;

@@ -7,4 +7,6 @@ export interface JobSeekerInterface {
         place: string,
         skills: string[]
     ): Promise<any>;
+
+    viewAllJobPost(): Promise<any>
 }

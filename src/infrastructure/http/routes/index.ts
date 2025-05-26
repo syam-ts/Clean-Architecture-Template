@@ -10,7 +10,8 @@ const checker = (req: any, res: any) => {
 const router = Router();
 // const { createJobPost } = EmployerController;
 
-router.post("/createjob",checker, employerController.createJobPost);
+router.get("/viewAllJobPost", employerController.viewAllJobPost);
+router.post("/createjob", employerController.createJobPost);
 
 
 export default router;

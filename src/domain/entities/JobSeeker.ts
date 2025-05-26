@@ -21,4 +21,7 @@ export class JobSeeker extends User {
         
         return;
     };
+viewAllJobPost = () => {
+    return
+    };
 }
