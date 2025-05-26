@@ -6,6 +6,7 @@ export class EmployerDbRepository implements EmployerRepository {
     async createJobPost(job: any): Promise<any> {
         if (!job) throw new Error("incorrect job format");
         const newJobPost = this.jobs.push(job);
+        console.log('The final jobs: ',job)
         return newJobPost;
     }
 }
