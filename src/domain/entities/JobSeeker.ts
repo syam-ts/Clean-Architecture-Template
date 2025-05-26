@@ -11,17 +11,10 @@ export class JobSeeker extends User {
         return "jobseeker";
     };
 
-    applyJob = (
-        name: string,
-        mobile: number,
-        age: number,
-        place: string,
-        skills: string[]
-    ) => {
-        
+    applyJob = (jobApplication: any) => {
         return;
     };
-viewAllJobPost = () => {
-    return
+    viewAllJobPost = () => {
+        return;
     };
 }

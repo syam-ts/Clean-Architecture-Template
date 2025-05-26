@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { CreateJobPost } from "../../../use-cases/Employer/createJobPost";
-import { ViewAllJobPost } from "../../../use-cases/Employer/viewAllJobPost";
+import { CreateJobPost } from "../../../use-cases/Employer/createJobPostUseCase";
+import { ViewAllJobPost } from "../../../use-cases/Employer/viewAllJobPostUseCase";
 import { EmployerDbRepository } from "../../repository-db/EmployerDbRepository";
 
 const employerRepo = new EmployerDbRepository();
